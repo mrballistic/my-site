@@ -707,3 +707,26 @@ footer {
   color: rgba(247, 245, 240, 0.5);
   margin-bottom: 2.5rem;
 }
+
+/* Weather widget — scoped styles (moved from index.html) */
+.weather-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(250,249,246,0.95));
+  border: 1px solid var(--border);
+  padding: 0.7rem 0.9rem;
+  border-radius: 10px;
+  min-width: 120px;
+  color: var(--text);
+  box-shadow: 0 6px 18px rgba(26,26,26,0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+.weather-main { display:flex; gap:0.65rem; align-items:center; }
+.weather-emoji { font-size:1.6rem; width:36px; text-align:center; }
+.weather-temp { font-family: 'Playfair Display', serif; font-size:1.2rem; font-weight:700; }
+.weather-conds { color:var(--muted); font-size:0.82rem; }
+.weather-location { color:var(--muted); font-size:0.72rem; letter-spacing:0.02em; }
+@media (max-width:720px){
+  .weather-card{ display:none; }
+}
